@@ -23,6 +23,12 @@
       <span class="wm-script">Swipeup</span>
       <span class="wm-sub">STUDIOS</span>
     </a>
+    <nav class="top-links" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#stories">All Stories</a>
+      <a href="#drops">Fresh Drops</a>
+      <a href="#contact" class="top-cta">Let's talk</a>
+    </nav>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -31,7 +37,8 @@
   <nav class="menu-overlay" aria-hidden="true">
     <ul>
       <li><a href="#work">Work</a></li>
-      <li><a href="#about">What's SUP</a></li>
+      <li><a href="#now">Now Showing</a></li>
+      <li><a href="#stories">All Stories</a></li>
       <li><a href="#series">Series</a></li>
       <li><a href="#drops">Fresh Drops</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -46,13 +53,16 @@
     <!-- ============ HERO ============ -->
     <section class="hero">
       <h1 class="hero-title">
-        <span class="line">WE ARE <span class="pill" style="--img:url(/assets/work/mutuals.jpg)"></span></span>
-        <span class="line"><span class="pill" style="--img:url(/assets/work/scribbles.jpg)"></span> SUP</span>
-        <span class="line">WE <span class="pill" style="--img:url(/assets/work/love-in-the-lift.jpg)"></span> MAKE</span>
-        <span class="line">STORIES <span class="pill pill-sm" style="--img:url(/assets/work/the-gangsters.jpg)"></span></span>
+        <span class="line">WE ARE <span class="pill"><video src="/assets/loops/mutuals.mp4" poster="/assets/loops/mutuals.jpg" autoplay muted loop playsinline></video></span></span>
+        <span class="line"><span class="pill"><video src="/assets/loops/scribbles.mp4" poster="/assets/loops/scribbles.jpg" autoplay muted loop playsinline></video></span> SUP</span>
+        <span class="line">WE <span class="pill"><video src="/assets/loops/love-in-the-lift.mp4" poster="/assets/loops/love-in-the-lift.jpg" autoplay muted loop playsinline></video></span> MAKE</span>
+        <span class="line">STORIES <span class="pill pill-sm"><video src="/assets/loops/hare-krishna.mp4" poster="/assets/loops/hare-krishna.jpg" autoplay muted loop playsinline></video></span></span>
         <span class="line accent">HARD TO SCROLL PAST</span>
       </h1>
-      <a href="#work" class="scroll-cue" aria-label="Scroll to work">
+      <div class="hero-meta">
+        <span>Originals</span><span>Ad Films</span><span>Short Stories</span><span>Hyderabad</span>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
         <span>Swipe up</span>
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -60,25 +70,26 @@
 
     <!-- ============ STATEMENT ============ -->
     <section class="statement" id="about">
+      <p class="eyebrow reveal">What's SUP?</p>
       <div class="statement-inner">
         <p class="reveal">We make <strong>Originals</strong> — Telugu micro dramas and love stories that millions watch till the last frame.</p>
         <p class="reveal">We make <strong>Ad Films</strong> for brands that want stories people share, not skip.</p>
         <p class="reveal">We make <strong>Short Stories</strong> with fresh writers, directors and faces who are just getting started.</p>
       </div>
       <div class="stats">
-        <div class="stat reveal"><span class="num" data-count="47">0</span><span class="unit">K+</span><span class="label">Followers</span></div>
-        <div class="stat reveal"><span class="num" data-count="882">0</span><span class="unit">K</span><span class="label">Likes on <em>Mutuals</em></span></div>
-        <div class="stat reveal"><span class="num" data-count="169">0</span><span class="unit"></span><span class="label">Stories posted</span></div>
+        <div class="stat reveal"><span class="num" data-count="47">0</span><span class="unit">K+</span><span class="label">Followers on Instagram</span></div>
+        <div class="stat reveal"><span class="num" data-count="882">0</span><span class="unit">K</span><span class="label">Likes on <em>Mutuals</em> alone</span></div>
+        <div class="stat reveal"><span class="num" data-count="170">0</span><span class="unit"></span><span class="label">Stories and counting</span></div>
       </div>
     </section>
 
-    <!-- ============ CONTACT CTA ============ -->
-    <section class="cta" id="contact">
-      <h2 class="reveal">Got a story<br />worth stopping for?</h2>
-      <div class="cta-actions reveal">
-        <a class="btn btn-dark" href="mailto:swipeupstudios@gmail.com">Contact us</a>
-        <a class="btn btn-outline" href="https://forms.gle/fPR8XuiNeZHCViSU8" target="_blank" rel="noopener">Join the crew ↗</a>
+    <!-- ============ NOW SHOWING (reel strip) ============ -->
+    <section class="now" id="now" aria-label="Now showing">
+      <div class="now-head">
+        <span class="live-dot"></span><span>NOW SHOWING</span>
+        <span class="now-hint">Tap a reel to watch</span>
       </div>
+      <div class="now-track" id="nowTrack"><!-- filled by main.js --></div>
     </section>
 
     <!-- ============ WORK ============ -->
@@ -91,9 +102,6 @@
           <button class="filter" data-filter="ad">Ad Films</button>
         </div>
         <div class="work-grid" id="workGrid"><!-- filled by main.js --></div>
-        <div class="center">
-          <a class="btn btn-light" href="https://www.instagram.com/swipeup.studios/reels/" target="_blank" rel="noopener">View all work ↗</a>
-        </div>
       </div>
     </section>
 
@@ -107,30 +115,46 @@
       </div>
     </section>
 
+    <!-- ============ ALL STORIES (gallery) ============ -->
+    <section class="stories" id="stories">
+      <div class="stories-head">
+        <h2 class="section-title reveal">All Stories <sup id="storyCount">170</sup></h2>
+        <div class="work-filters light" role="tablist">
+          <button class="sfilter active" data-type="all">All</button>
+          <button class="sfilter" data-type="reel">Reels</button>
+          <button class="sfilter" data-type="post">Posts</button>
+        </div>
+      </div>
+      <div class="stories-grid" id="storiesGrid"><!-- filled by main.js --></div>
+      <div class="center">
+        <button class="btn btn-dark" id="loadMore">Load more stories</button>
+      </div>
+    </section>
+
     <!-- ============ SERIES ============ -->
     <section class="series" id="series">
       <h2 class="section-title reveal">Series &amp; Collections</h2>
       <div class="series-row">
-        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/coffee-and-roses.jpg" alt="Coffee & Roses" loading="lazy" /><span>Coffee &amp; Roses</span></a>
-        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/love-in-lift.jpg" alt="Love in Lift" loading="lazy" /><span>Love in Lift</span></a>
-        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/fist-bump.jpg" alt="Friendship" loading="lazy" /><span>Friendship</span></a>
-        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/coolie.jpg" alt="Coolie" loading="lazy" /><span>Coolie</span></a>
-        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/two-of-us.jpg" alt="Two of Us" loading="lazy" /><span>Two of Us</span></a>
-        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/mini-shorts.jpg" alt="Mini Shorts" loading="lazy" /><span>Mini Shorts</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><span class="ring"><img src="/assets/highlights/coffee-and-roses.jpg" alt="" loading="lazy" /></span><span>Coffee &amp; Roses</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><span class="ring"><img src="/assets/highlights/love-in-lift.jpg" alt="" loading="lazy" /></span><span>Love in Lift</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><span class="ring"><img src="/assets/highlights/fist-bump.jpg" alt="" loading="lazy" /></span><span>Friendship</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><span class="ring"><img src="/assets/highlights/coolie.jpg" alt="" loading="lazy" /></span><span>Coolie</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><span class="ring"><img src="/assets/highlights/two-of-us.jpg" alt="" loading="lazy" /></span><span>Two of Us</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><span class="ring"><img src="/assets/highlights/mini-shorts.jpg" alt="" loading="lazy" /></span><span>Mini Shorts</span></a>
       </div>
     </section>
 
-    <!-- ============ FRESH DROPS (news) ============ -->
+    <!-- ============ FRESH DROPS ============ -->
     <section class="drops" id="drops">
       <h2 class="section-title reveal">Fresh Drops</h2>
       <div class="drops-list">
         <article class="drop reveal">
-          <img src="/assets/work/amma-nanna-aata.jpg" alt="Amma Nanna Aata poster" loading="lazy" />
+          <img src="/assets/work/amma-trailer.jpg" alt="Amma Nanna Aata trailer" loading="lazy" />
           <div>
-            <time>November 16, 2026</time>
-            <h3>AMMA NANNA AATA — A SWIPEUP STUDIOS ORIGINAL</h3>
-            <p>Our newest original about the games our parents played as kids — and the ones we'll make sure they play again. Written and directed by @nithin.movies. Trailer drops soon.</p>
-            <a href="https://www.instagram.com/swipeup.studios/p/DfzYVRKqf7W/" target="_blank" rel="noopener">See the poster ↗</a>
+            <time>November 18, 2026</time>
+            <h3>AMMA NANNA AATA — 14 DAYS, 14 EPISODES FROM 21ST NOV</h3>
+            <p>Our new Telugu series lands one episode a day for 14 days, starting November 21. The trailer is out now. Written and directed by @nithin.movies.</p>
+            <a href="https://www.instagram.com/swipeup.studios/reel/Df4orq1qnkk/" target="_blank" rel="noopener">Watch the trailer ↗</a>
           </div>
         </article>
         <article class="drop reveal">
@@ -151,6 +175,16 @@
             <a href="mailto:swipeupstudios@gmail.com">Send your portfolio →</a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CTA ============ -->
+    <section class="cta" id="contact">
+      <h2 class="reveal">Got a story<br />worth stopping for?</h2>
+      <p class="reveal">Brands, writers, actors, collaborators — we'd love to hear from you.</p>
+      <div class="cta-actions reveal">
+        <a class="btn btn-dark" href="mailto:swipeupstudios@gmail.com">Contact us</a>
+        <a class="btn btn-outline" href="https://forms.gle/fPR8XuiNeZHCViSU8" target="_blank" rel="noopener">Join the crew ↗</a>
       </div>
     </section>
   </main>
@@ -182,8 +216,8 @@
     </div>
   </footer>
 
-  <!-- ============ VIDEO MODAL ============ -->
-  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Watch film">
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Watch">
     <div class="modal-backdrop" data-close></div>
     <div class="modal-body">
       <button class="modal-close" data-close aria-label="Close">✕</button>
