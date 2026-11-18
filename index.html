@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwipeUp Studios — Stories Harder to Scroll Past</title>
+  <meta name="description" content="SwipeUp Studios (SUP) makes Telugu originals, ad films and short stories that are harder to scroll past. Crafted by SwipeUp Productions." />
+  <meta property="og:title" content="SwipeUp Studios — What's SUP?" />
+  <meta property="og:description" content="Originals | Ad Films | Short Stories. Just making stories harder to scroll past." />
+  <meta property="og:image" content="/assets/work/mutuals.jpg" />
+  <meta name="theme-color" content="#FFE14D" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <a href="#top" class="wordmark" aria-label="SwipeUp Studios home">
+      <span class="wm-script">Swipeup</span>
+      <span class="wm-sub">STUDIOS</span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="menu-overlay" aria-hidden="true">
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">What's SUP</a></li>
+      <li><a href="#series">Series</a></li>
+      <li><a href="#drops">Fresh Drops</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-foot">
+      <a href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:swipeupstudios@gmail.com">swipeupstudios@gmail.com</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <h1 class="hero-title">
+        <span class="line">WE ARE <span class="pill" style="--img:url(/assets/work/mutuals.jpg)"></span></span>
+        <span class="line"><span class="pill" style="--img:url(/assets/work/scribbles.jpg)"></span> SUP</span>
+        <span class="line">WE <span class="pill" style="--img:url(/assets/work/love-in-the-lift.jpg)"></span> MAKE</span>
+        <span class="line">STORIES <span class="pill pill-sm" style="--img:url(/assets/work/the-gangsters.jpg)"></span></span>
+        <span class="line accent">HARD TO SCROLL PAST</span>
+      </h1>
+      <a href="#work" class="scroll-cue" aria-label="Scroll to work">
+        <span>Swipe up</span>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement" id="about">
+      <div class="statement-inner">
+        <p class="reveal">We make <strong>Originals</strong> — Telugu micro dramas and love stories that millions watch till the last frame.</p>
+        <p class="reveal">We make <strong>Ad Films</strong> for brands that want stories people share, not skip.</p>
+        <p class="reveal">We make <strong>Short Stories</strong> with fresh writers, directors and faces who are just getting started.</p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><span class="num" data-count="47">0</span><span class="unit">K+</span><span class="label">Followers</span></div>
+        <div class="stat reveal"><span class="num" data-count="882">0</span><span class="unit">K</span><span class="label">Likes on <em>Mutuals</em></span></div>
+        <div class="stat reveal"><span class="num" data-count="169">0</span><span class="unit"></span><span class="label">Stories posted</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CTA ============ -->
+    <section class="cta" id="contact">
+      <h2 class="reveal">Got a story<br />worth stopping for?</h2>
+      <div class="cta-actions reveal">
+        <a class="btn btn-dark" href="mailto:swipeupstudios@gmail.com">Contact us</a>
+        <a class="btn btn-outline" href="https://forms.gle/fPR8XuiNeZHCViSU8" target="_blank" rel="noopener">Join the crew ↗</a>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <div class="work-side" aria-hidden="true"><span>WORK</span></div>
+      <div class="work-main">
+        <div class="work-filters" role="tablist">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="original">Originals</button>
+          <button class="filter" data-filter="ad">Ad Films</button>
+        </div>
+        <div class="work-grid" id="workGrid"><!-- filled by main.js --></div>
+        <div class="center">
+          <a class="btn btn-light" href="https://www.instagram.com/swipeup.studios/reels/" target="_blank" rel="noopener">View all work ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-label="Harder to scroll past">
+      <div class="marquee-track">
+        <span>HARDER TO SCROLL PAST</span><span class="dot">✦</span>
+        <span>HARDER TO SCROLL PAST</span><span class="dot">✦</span>
+        <span>HARDER TO SCROLL PAST</span><span class="dot">✦</span>
+        <span>HARDER TO SCROLL PAST</span><span class="dot">✦</span>
+      </div>
+    </section>
+
+    <!-- ============ SERIES ============ -->
+    <section class="series" id="series">
+      <h2 class="section-title reveal">Series &amp; Collections</h2>
+      <div class="series-row">
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/coffee-and-roses.jpg" alt="Coffee & Roses" loading="lazy" /><span>Coffee &amp; Roses</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/love-in-lift.jpg" alt="Love in Lift" loading="lazy" /><span>Love in Lift</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/fist-bump.jpg" alt="Friendship" loading="lazy" /><span>Friendship</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/coolie.jpg" alt="Coolie" loading="lazy" /><span>Coolie</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/two-of-us.jpg" alt="Two of Us" loading="lazy" /><span>Two of Us</span></a>
+        <a class="series-item reveal" href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener"><img src="/assets/highlights/mini-shorts.jpg" alt="Mini Shorts" loading="lazy" /><span>Mini Shorts</span></a>
+      </div>
+    </section>
+
+    <!-- ============ FRESH DROPS (news) ============ -->
+    <section class="drops" id="drops">
+      <h2 class="section-title reveal">Fresh Drops</h2>
+      <div class="drops-list">
+        <article class="drop reveal">
+          <img src="/assets/work/amma-nanna-aata.jpg" alt="Amma Nanna Aata poster" loading="lazy" />
+          <div>
+            <time>November 16, 2026</time>
+            <h3>AMMA NANNA AATA — A SWIPEUP STUDIOS ORIGINAL</h3>
+            <p>Our newest original about the games our parents played as kids — and the ones we'll make sure they play again. Written and directed by @nithin.movies. Trailer drops soon.</p>
+            <a href="https://www.instagram.com/swipeup.studios/p/DfzYVRKqf7W/" target="_blank" rel="noopener">See the poster ↗</a>
+          </div>
+        </article>
+        <article class="drop reveal">
+          <img src="/assets/work/the-gangsters.jpg" alt="The Gangsters" loading="lazy" />
+          <div>
+            <time>November 7, 2026</time>
+            <h3>THE GANGSTERS — OUR DIWALI SPECIAL</h3>
+            <p>The whole SUP crew stepped in front of the camera for a Diwali short, written and directed by @__prashanth_sai.</p>
+            <a href="https://www.instagram.com/swipeup.studios/reel/DfeEl99q5K9/" target="_blank" rel="noopener">Watch the reel ↗</a>
+          </div>
+        </article>
+        <article class="drop reveal">
+          <img src="/assets/work/casting-call.jpg" alt="SwipeUp Studios is hiring" loading="lazy" />
+          <div>
+            <time>October 10, 2026</time>
+            <h3>WE'RE LOOKING FOR NEW TALENT</h3>
+            <p>Writers, directors, DOPs, editors and actors: send your portfolio or past work to swipeupstudios@gmail.com and tell us your story.</p>
+            <a href="mailto:swipeupstudios@gmail.com">Send your portfolio →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-big">
+      <span class="wm-script">Swipeup</span>
+      <span class="wm-sub">STUDIOS</span>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>Say hello</h4>
+        <a href="mailto:swipeupstudios@gmail.com">swipeupstudios@gmail.com</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/swipeup.studios/" target="_blank" rel="noopener">@swipeup.studios</a>
+        <a href="https://www.instagram.com/swipeupproductions/" target="_blank" rel="noopener">@swipeupproductions</a>
+      </div>
+      <div>
+        <h4>Work with us</h4>
+        <a href="https://forms.gle/fPR8XuiNeZHCViSU8" target="_blank" rel="noopener">Join the crew form</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SwipeUp Studios. Crafted by SwipeUp Productions.</span>
+      <span>Built by <a href="https://vamshicreates.tech" target="_blank" rel="noopener">Vamshi Creates</a></span>
+    </div>
+  </footer>
+
+  <!-- ============ VIDEO MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Watch film">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-body">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-frame" id="modalFrame"></div>
+      <div class="modal-info" id="modalInfo"></div>
+    </div>
+  </div>
+
+  <script src="/main.js" defer></script>
+</body>
+</html>
